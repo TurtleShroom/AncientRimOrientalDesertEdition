@@ -104,7 +104,6 @@
       </tags>
       <!-- <gender>Male</gender> -->
       <defaultOutfitTags>
-        <li>Worker</li>
         <li>Soldier</li>
         <li>Slave</li>
       </defaultOutfitTags>

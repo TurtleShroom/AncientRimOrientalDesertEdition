@@ -41,7 +41,7 @@
   <thingDef ParentName="AncientApparelMakeableBase">
     <defName>AR_Shendyt</defName>
     <label>Shendyt</label>
-    <description>A rectangular piece of clothing which is wrappped around the waist.</description>
+    <description>A rectangular piece of clothing which is wrappped around the waist. Men wore this without a shirt to cover themselves appropriately when working.</description>
     <graphicData>
       <texPath>Items/Apparel/ShendytOnMap</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -73,8 +73,11 @@
       <layers>
         <li>OnSkin</li>
       </layers>
+	  <gender>Male</gender>
       <tags>
         <li>EgyptianBasic</li>
+		<li>EgyptianAdvanced</li>
+		<li>EgyptianNoble</li>
       </tags>
       <defaultOutfitTags>
         <li>Worker</li>
@@ -133,6 +136,15 @@
       </layers>
       <tags>
         <li>EgyptianBasic</li>
+		<li>EgyptianAdvanced</li>
+		<li>EgyptianLight</li>
+		<li>EgyptianMedium</li>
+		<li>EgyptianHeavy</li>
+		<li>NeolithicDecent</li>
+		<li>OrientalLight</li>
+		<li>OrientalMedium</li>
+		<li>OrientalHeavy</li>
+		<li>Tribal</li>
       </tags>
       <gender>Female</gender>
       <defaultOutfitTags>
@@ -261,6 +273,7 @@
       <tags>
         <li>EgyptianNoble</li>
         <li>EgyptialRoyal</li>
+		<li>EgyptianAdvanced</li>
       </tags>
       <gender>Female</gender>
       <defaultOutfitTags>

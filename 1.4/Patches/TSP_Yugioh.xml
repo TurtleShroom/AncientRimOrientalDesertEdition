@@ -29,15 +29,49 @@
 	
 	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName="SAM_ObeliskBig"]/comps</xpath>
+		<xpath>/Defs/ThingDef[defName="GSE_ObeliskBig"]/comps</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[@Name="ObeliskSAM"]</xpath>
+			<xpath>/Defs/ThingDef[@Name="Obelisk"]</xpath>
 			<success>Always</success>
 			<value>
 				<comps></comps>
 			</value>
 		</nomatch>
 	</Operation>
+	
+	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName="GSE_ObeliskBig"]/researchPrerequisites</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[@Name="Obelisk"]</xpath>
+			<success>Always</success>
+			<value>
+				<researchPrerequisites></researchPrerequisites>
+			</value>
+		</nomatch>
+	</Operation>
+	
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/ThingDef[defName="SAM_ObeliskBig"]/thingClass</xpath>
+    <!-- If it does, do this replacement. -->
+    <match Class="PatchOperationReplace">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef[@Name="ObeliskSAM"]/thingClass</xpath>
+      <value>
+		<thingClass>Building_Art</thingClass>
+      </value>
+    </match>
+	<!-- If it DOES NOT, add this instead. -->
+	<nomatch Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[@Name="ObeliskSAM"]</xpath>
+		<value>
+			<thingClass>Building_Art</thingClass>
+		</value>
+	</nomatch>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
 	
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
@@ -208,7 +242,6 @@
 			<canGenerateDefaultDesignator>true</canGenerateDefaultDesignator>
 		</value>
 	</nomatch>
-    <!-- If the first XPATH does not exist, the original code stands. -->
     <!-- If the first XPATH does not exist, the original code stands. -->
   </Operation>
   
@@ -753,11 +786,11 @@
 	
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="ObeliskSAM"]</xpath>
+		<xpath>/Defs/ThingDef[defName="SAM_ObeliskBig"]</xpath>
 		<!-- If it does, add this. -->
 		<match Class="PatchOperationAdd">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef[defName="ObeliskSAM"]/researchPrerequisites</xpath>
+			<xpath>/Defs/ThingDef[@Name="ObeliskSAM"]/researchPrerequisites</xpath>
 			<value>
 				<li>AR_Project_Oriental_Culture</li>
 			</value>
@@ -814,6 +847,124 @@
 	</nomatch>
     <!-- If the first XPATH does not exist, the original code stands. -->
   </Operation>
+  
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/ThingDef[defName="GSE_ObeliskBig"]/thingClass</xpath>
+    <!-- If it does, do this replacement. -->
+    <match Class="PatchOperationReplace">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef[@Name="Obelisk"]/thingClass</xpath>
+      <value>
+		<thingClass>Building_Art</thingClass>
+      </value>
+    </match>
+	<!-- If it DOES NOT, add this instead. -->
+	<nomatch Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[@Name="Obelisk"]</xpath>
+		<value>
+			<thingClass>Building_Art</thingClass>
+		</value>
+	</nomatch>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/ThingDef[defName="GSE_ObeliskBig"]/comps</xpath>
+    <!-- If it does, do this replacement. -->
+    <match Class="PatchOperationReplace">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef[@Name="Obelisk"]/comps</xpath>
+      <value>
+		  <comps>
+			  <li>
+				<compClass>CompQuality</compClass>
+			  </li>
+			  <li Class="CompProperties_Art">
+				<nameMaker>NamerArtSculpture</nameMaker>
+				<descriptionMaker>ArtDescription_Sculpture</descriptionMaker>
+				<canBeEnjoyedAsArt>true</canBeEnjoyedAsArt>
+			  </li>
+			  <li Class="CompProperties_MeditationFocus">
+				<statDef>MeditationFocusStrength</statDef>
+				<focusTypes>
+				  <li>Artistic</li>
+				  <li>Morbid</li>
+				</focusTypes>
+				<offsets>
+					  <li Class="FocusStrengthOffset_Quality">
+						<curve>
+						  <points>
+							<li>(0,0.12)</li> <!-- awful -->
+							<li>(1,0.16)</li> <!-- poor -->
+							<li>(2,0.20)</li> <!-- normal -->
+							<li>(3,0.22)</li> <!-- good -->
+							<li>(4,0.24)</li> <!-- excellent -->
+							<li>(5,0.26)</li> <!-- masterwork -->
+							<li>(6,0.28)</li> <!-- legendary -->
+						  </points>
+						</curve>
+					  </li>
+				  </offsets>
+			  </li>
+			<li Class="CompProperties_Styleable"></li>
+		</comps>
+      </value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  
+  
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/ThingDef[defName="SAM_ObeliskBig"]/comps</xpath>
+    <!-- If it does, do this replacement. -->
+    <match Class="PatchOperationReplace">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef[@Name="ObeliskSAM"]/comps</xpath>
+      <value>
+		  <comps>
+			  <li>
+				<compClass>CompQuality</compClass>
+			  </li>
+			  <li Class="CompProperties_Art">
+				<nameMaker>NamerArtSculpture</nameMaker>
+				<descriptionMaker>ArtDescription_Sculpture</descriptionMaker>
+				<canBeEnjoyedAsArt>true</canBeEnjoyedAsArt>
+			  </li>
+			  <li Class="CompProperties_MeditationFocus">
+				<statDef>MeditationFocusStrength</statDef>
+				<focusTypes>
+				  <li>Artistic</li>
+				  <li>Morbid</li>
+				</focusTypes>
+				<offsets>
+					  <li Class="FocusStrengthOffset_Quality">
+						<curve>
+						  <points>
+							<li>(0,0.12)</li> <!-- awful -->
+							<li>(1,0.16)</li> <!-- poor -->
+							<li>(2,0.20)</li> <!-- normal -->
+							<li>(3,0.22)</li> <!-- good -->
+							<li>(4,0.24)</li> <!-- excellent -->
+							<li>(5,0.26)</li> <!-- masterwork -->
+							<li>(6,0.28)</li> <!-- legendary -->
+						  </points>
+						</curve>
+					  </li>
+				  </offsets>
+			  </li>
+			<li Class="CompProperties_Styleable"></li>
+		</comps>
+      </value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  
+  
+  
   
   
 
@@ -1057,5 +1208,116 @@
 			</value>
 		</match>
 		<!-- If the first XPATH does not exist, the original code stands. -->
-	</Operation>	
+	</Operation>
+
+	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[@Name="GE_Hat"]/apparel/tags</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[@Name="GE_Hat"]/apparel</xpath>
+			<success>Always</success>
+			<value>
+				<tags></tags>
+			</value>
+		</nomatch>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[Name="GE_Hat_Seto"]</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[@Name="GE_Hat"]/apparel/tags</xpath>
+			<value>
+				<li>EgyptianNoble</li>
+				<li>EgyptianRoyal</li>
+				<li>HarrowedMeleeChampion</li>
+				<li>HarrowedMeleeCommander</li>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName="GE_Hat_Seto"]/apparel/tags</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName="GE_Hat_Seto"]/apparel</xpath>
+			<success>Always</success>
+			<value>
+				<tags></tags>
+			</value>
+		</nomatch>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[Name="GE_Hat_Seto"]/apparel/tags</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="GE_Hat_Seto"]/apparel/tags</xpath>
+			<value>
+				<li>EgyptianNoble</li>
+				<li>EgyptianRoyal</li>
+				<li>HarrowedMeleeChampion</li>
+				<li>HarrowedMeleeCommander</li>
+				<li>BestowerHood</li>
+				<li>Hood</li>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName="GE_Hat_priest"]/apparel/tags</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName="GE_Hat_priest"]/apparel</xpath>
+			<success>Always</success>
+			<value>
+				<tags></tags>
+			</value>
+		</nomatch>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="GE_Hat_priest"]/apparel/tags</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="GE_Hat_priest"]/apparel/tags</xpath>
+			<value>
+				<li>EgyptianNoble</li>
+				<li>EgyptianRoyal</li>
+				<li>HarrowedMeleeChampion</li>
+				<li>HarrowedMeleeCommander</li>
+				<li>BestowerHood</li>
+				<li>Hood</li>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="GE_Hat_cowl"]/apparel/tags</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="GE_Hat_cowl"]/apparel/tags</xpath>
+			<value>
+				<li>EgyptianNoble</li>
+				<li>EgyptianRoyal</li>
+				<li>HarrowedMeleeChampion</li>
+				<li>HarrowedMeleeCommander</li>
+				<li>BestowerHood</li>
+				<li>JeubWear</li>
+				<li>BeetWear</li>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
 </Patch>
