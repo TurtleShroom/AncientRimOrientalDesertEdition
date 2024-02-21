@@ -38,6 +38,10 @@
         <li>ST_GnomeClothing</li>
         <li>islam_head</li>
         <li>Muslim_apparel</li>
+		<li>WoodBeetWear</li>
+		<li>SurvivalistWear</li>
+		<li>HarrierWear</li>
+		<li>CaravaneerWear</li>
       </tags>
       <defaultOutfitTags>
         <li>Worker</li>
@@ -45,6 +49,11 @@
       </defaultOutfitTags>
       <canBeGeneratedToSatisfyWarmth Inherit="False">false</canBeGeneratedToSatisfyWarmth>
       <countsAsClothingForNudity>false</countsAsClothingForNudity>
+	  <tradeTags>
+		<li>ClothingSimple</li>
+		<li>Egypt</li>
+		<li>EgyptHat</li>
+	  </tradeTags>
     </apparel>
     <recipeMaker>
       <researchPrerequisite>AR_Project_Oriental_Culture</researchPrerequisite>
@@ -65,8 +74,11 @@
         </li>
       </options>
     </colorGenerator>
+	<tradeTags>
+		<li>Egypt</li>
+	</tradeTags>
   </ThingDef>
-  <ThingDef ParentName="AncientHatMakeableBase">
+  <ThingDef ParentName="OrientArmourMakeableBase">
     <defName>AR_SkullCap</defName>
     <label>skull helmet</label>
     <description>A cap for the head. Initially used only by men, thousands of years have caused it to be seen as unisex for most primitive societies. Countless tribes across the galaxy employ it for basic heat protection.</description>
@@ -118,6 +130,10 @@
       </recipeUsers>
     </recipeMaker>
     <colorGenerator Class="ColorGenerator_StandardApparel" />
+	<tradeTags>
+		<li>Egypt</li>
+		<li>EgyptHatArmor</li>
+	</tradeTags>
   </ThingDef>
   <!-- Military -->
   <ThingDef ParentName="AncientHatMakeableBase">
@@ -169,11 +185,12 @@
     </apparel>
     <recipeMaker>
       <researchPrerequisite>AR_Project_Light_Armour</researchPrerequisite>
-      <skillRequirements>
-        <Crafting>3</Crafting>
-      </skillRequirements>
     </recipeMaker>
     <colorGenerator Class="ColorGenerator_StandardApparel" />
+	<tradeTags>
+		<li>Egypt</li>
+		<li>EgyptHatArmor</li>
+	</tradeTags>
   </ThingDef>
   <!-- Royal -->
   <ThingDef ParentName="AncientHatMakeableBase">
@@ -252,6 +269,10 @@
     <comps>
       <li Class="CompProperties_Biocodable" />
     </comps>
+	<tradeTags>
+		<li>EgyptRoyal</li>
+		<li>Royal</li>
+	</tradeTags>
   </ThingDef>
   <ThingDef ParentName="AncientHatMakeableBase">
     <defName>AR_Khepresh</defName>
@@ -322,6 +343,10 @@
         </li>
       </options>
     </colorGenerator>
+	<tradeTags>
+		<li>EgyptRoyal</li>
+		<li>Royal</li>
+	</tradeTags>
     <comps>
       <li Class="CompProperties_Biocodable" />
     </comps>
@@ -396,6 +421,10 @@
         </li>
       </options>
     </colorGenerator>
+	<tradeTags>
+		<li>EgyptRoyal</li>
+		<li>Royal</li>
+	</tradeTags>
     <comps>
       <li Class="CompProperties_Biocodable" />
     </comps>
@@ -453,6 +482,10 @@
         <Crafting>3</Crafting>
       </skillRequirements>
     </recipeMaker>
+	<tradeTags>
+		<li>EgyptRoyal</li>
+		<li>Royal</li>
+	</tradeTags>
     <comps>
       <li Class="CompProperties_Biocodable" />
     </comps>
@@ -495,6 +528,8 @@
       <tags>
         <li>EgyptianRoyal</li>
         <li>Egypt</li>
+		<li>RoyalTier6</li>
+		<li>RoyalTier7</li>
       </tags>
       <defaultOutfitTags>
         <li>Worker</li>
@@ -508,6 +543,10 @@
         <Crafting>6</Crafting>
       </skillRequirements>
     </recipeMaker>
+	<tradeTags>
+		<li>EgyptRoyal</li>
+		<li>Royal</li>
+	</tradeTags>
     <comps>
       <li Class="CompProperties_Biocodable" />
     </comps>

@@ -1,11 +1,41 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
+  <ThingDef Name="AncientEgyptApparelMakeBase" ParentName="AncientApparelMakeableBase" Abstract="True">
+    <tradeability>All</tradeability>
+	<!--
+    <thingCategories Inherit="False">
+      <li>TSP_AR_RomanClothing</li>
+    </thingCategories>
+	-->
+    <apparel>
+      <tags>
+        <li>Egypt</li>
+      </tags>
+    </apparel>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Tailor</effectWorking>
+      <soundWorking>Recipe_Tailor</soundWorking>
+	  <!--
+      <recipeUsers Inherit="False">
+        <li>HandTailoringBench</li>
+        <li>ElectricTailoringBench</li>
+      </recipeUsers>
+	  -->
+      <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+    </recipeMaker>
+	<tradeTags>
+		<li>Egypt</li>
+		<li>EgyptClothing</li>
+	</tradeTags>
+  </ThingDef>
   <ThingDef Name="OrientArmourMakeableBase" ParentName="AncientArmourMakeableBase" Abstract="True">
     <statBases>
       <MaxHitPoints>300</MaxHitPoints>
       <Flammability>1.0</Flammability>
       <DeteriorationRate>2</DeteriorationRate>
-      <Beauty>-4</Beauty>
+      <Beauty>-1</Beauty>
       <SellPriceFactor>0.70</SellPriceFactor>
     </statBases>
     <apparel>
@@ -35,10 +65,14 @@
           <li>Uranium</li>
         </disallowedThingDefs>
       </defaultIngredientFilter>
+	  <tradeTags>
+		<li>Egypt</li>
+		<li>EgyptArmor</li>
+	  </tradeTags>
     </recipeMaker>
   </ThingDef>
   <!-- Civil -->
-  <thingDef ParentName="AncientApparelMakeableBase">
+  <thingDef ParentName="AncientEgyptApparelMakeBase">
     <defName>AR_Shendyt</defName>
     <label>Shendyt</label>
     <description>A rectangular piece of clothing which is wrappped around the waist. Men wore this without a shirt to cover themselves appropriately when working.</description>
@@ -105,7 +139,7 @@
       </recipeUsers>
     </recipeMaker>
   </thingDef>
-  <thingDef ParentName="AncientApparelMakeableBase">
+  <thingDef ParentName="AncientEgyptApparelMakeBase">
     <defName>AR_EgyptSimple</defName>
     <label>simple Egyptian dress</label>
     <description>A simple dress in Egyptian fashion. Ancient Egyptian women would wear a straight dress covering their entire breasts and down to their knees, usually with one or two shoulder straps.</description>
@@ -140,6 +174,7 @@
 		<li>EgyptianLight</li>
 		<li>EgyptianMedium</li>
 		<li>EgyptianHeavy</li>
+		<li>Medieval</li>
 		<li>NeolithicDecent</li>
 		<li>OrientalLight</li>
 		<li>OrientalMedium</li>
@@ -171,8 +206,14 @@
         <li>CraftingSpot</li>
       </recipeUsers>
     </recipeMaker>
+	  <tradeTags>
+		<li>ClothingSimple</li>
+		<li>Egypt</li>
+		<li>ClothingBasic</li>
+		<li>Clothing</li>
+	  </tradeTags>
   </thingDef>
-  <thingDef ParentName="AncientApparelMakeableBase">
+  <thingDef ParentName="AncientEgyptApparelMakeBase">
     <defName>AR_NetDress</defName>
     <label>net dress</label>
     <description>A see-through dress covering just enough not to feel entirely naked. Nudists don't mind wearing it. Do not wear it when it is cold out.</description>
@@ -188,15 +229,15 @@
     <statBases>
       <WorkToMake>3000</WorkToMake>
       <StuffEffectMultiplierArmor>0</StuffEffectMultiplierArmor>
-      <StuffEffectMultiplierInsulation_Cold>-0.2</StuffEffectMultiplierInsulation_Cold>
-      <StuffEffectMultiplierInsulation_Heat>2</StuffEffectMultiplierInsulation_Heat>
+      <StuffEffectMultiplierInsulation_Cold>-0.33</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>2.2</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>0.01</EquipDelay>
       <Mass>0.1</Mass>
     </statBases>
     <equippedStatOffsets>
       <SocialImpact>0.1</SocialImpact>
     </equippedStatOffsets>
-    <generateCommonality>0.8</generateCommonality>
+    <generateCommonality>0.5</generateCommonality>
     <apparel>
       <bodyPartGroups>
         <li>Legs</li>
@@ -232,10 +273,10 @@
       </recipeUsers>
     </recipeMaker>
   </thingDef>
-  <thingDef ParentName="AncientApparelMakeableBase">
+  <thingDef ParentName="AncientEgyptApparelMakeBase">
     <defName>AR_EgyptFancy</defName>
     <label>fancy Egyptian dress</label>
-    <description>An elegant dress of thin woven cloth.</description>
+    <description>An elegant dress of thin woven textiles.</description>
     <graphicData>
       <texPath>Items/Apparel/FancyDressOnMap</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -244,6 +285,7 @@
     <costStuffCount>80</costStuffCount>
     <stuffCategories>
       <li>Fabric</li>
+	  <li>Leathery</li>
     </stuffCategories>
     <thingCategories>
       <li>Apparel</li>
@@ -295,6 +337,9 @@
     <recipeMaker>
       <researchPrerequisite>AR_Project_Oriental_Culture</researchPrerequisite>
     </recipeMaker>
+	<tradeTags Inherit="False">
+		<li>EgyptRoyal</li>
+	</tradeTags>
   </thingDef>
   <!-- Military -->
   <!--

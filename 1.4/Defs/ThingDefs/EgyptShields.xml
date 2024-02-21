@@ -7,6 +7,10 @@
         <li>FueledSmithy</li>
       </recipeUsers>
     </recipeMaker>
+	<tradeTags>
+		<li>EgyptShield</li>
+		<li>Egypt</li>
+	</tradeTags>
   </ThingDef>
   <!--0==============================0 General 0==============================0 -->
   <ThingDef ParentName="OrientShields">
