@@ -52,6 +52,10 @@
       <li>PlaceWorker_RitualFocus</li>
     </placeWorkers>
   </ThingDef>
+  <tradeTags>
+	<li>Egypt</li>
+	<li>EgyptFurniture</li>
+  </tradeTags>
   <ThingDef ParentName="SculptureBase">
     <defName>AR_ObeliskMedium</defName>
     <label>medium Egyptian obelisk</label>
@@ -103,6 +107,10 @@
       <li>PlaceWorker_RitualFocus</li>
       <li>PlaceWorker_NotUnderRoof</li>
     </placeWorkers>
+	  <tradeTags>
+		<li>Egypt</li>
+		<li>EgyptFurniture</li>
+	  </tradeTags>
   </ThingDef>
   <ThingDef ParentName="SculptureBase">
     <defName>AR_ObeliskBig</defName>
@@ -153,5 +161,10 @@
       <li>PlaceWorker_RitualFocus</li>
       <li>PlaceWorker_NotUnderRoof</li>
     </placeWorkers>
+	  <tradeTags>
+		<li>Egypt</li>
+		<li>EgyptFurniture</li>
+		<li>EgyptFurnitureHuge</li>
+	  </tradeTags>
   </ThingDef>
 </Defs>

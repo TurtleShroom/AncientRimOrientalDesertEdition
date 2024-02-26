@@ -65,11 +65,11 @@
           <li>Uranium</li>
         </disallowedThingDefs>
       </defaultIngredientFilter>
+    </recipeMaker>
 	  <tradeTags>
 		<li>Egypt</li>
 		<li>EgyptArmor</li>
 	  </tradeTags>
-    </recipeMaker>
   </ThingDef>
   <!-- Civil -->
   <thingDef ParentName="AncientEgyptApparelMakeBase">

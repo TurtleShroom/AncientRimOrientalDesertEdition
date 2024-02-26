@@ -49,11 +49,6 @@
       </defaultOutfitTags>
       <canBeGeneratedToSatisfyWarmth Inherit="False">false</canBeGeneratedToSatisfyWarmth>
       <countsAsClothingForNudity>false</countsAsClothingForNudity>
-	  <tradeTags>
-		<li>ClothingSimple</li>
-		<li>Egypt</li>
-		<li>EgyptHat</li>
-	  </tradeTags>
     </apparel>
     <recipeMaker>
       <researchPrerequisite>AR_Project_Oriental_Culture</researchPrerequisite>
@@ -74,9 +69,11 @@
         </li>
       </options>
     </colorGenerator>
-	<tradeTags>
+	  <tradeTags>
+		<li>ClothingSimple</li>
 		<li>Egypt</li>
-	</tradeTags>
+		<li>EgyptHat</li>
+	  </tradeTags>
   </ThingDef>
   <ThingDef ParentName="OrientArmourMakeableBase">
     <defName>AR_SkullCap</defName>
