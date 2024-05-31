@@ -155,7 +155,7 @@
       <WorkToMake>2000</WorkToMake>
       <StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
       <StuffEffectMultiplierInsulation_Cold>0.06</StuffEffectMultiplierInsulation_Cold>
-      <StuffEffectMultiplierInsulation_Heat>0.85</StuffEffectMultiplierInsulation_Heat>
+      <StuffEffectMultiplierInsulation_Heat>1</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>1.5</EquipDelay>
       <Mass>0.4</Mass>
     </statBases>
@@ -648,7 +648,11 @@
       </defaultOutfitTags>
     </apparel>
     <recipeMaker>
-      <researchPrerequisite>AR_Project_Chainmail</researchPrerequisite>
+		<researchPrerequisites>
+			<li>AR_Project_Chainmail</li>
+			<li>AR_Project_Oriental_Culture</li>
+			<li>MultiAnalyzer</li>
+		</researchPrerequisites>
       <recipeUsers>
         <!-- This should be inherited -->
         <li>TableMachining</li>
