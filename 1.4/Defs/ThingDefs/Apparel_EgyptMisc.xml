@@ -421,8 +421,8 @@
     <stuffCategories>
 		<li>Fabric</li>
 		<li>Leathery</li>
-		<li MayRequire="kerbinfiber.chronos">Chitin</li>
-		<li MayRequire="kerbinfiber.chronos">Padding</li> <!-- Reinforced leather -->
+		<li MayRequire="kerbinfiber.chronos">WYD_Chitin</li>
+		<li MayRequire="kerbinfiber.chronos">WYD_Padding</li> <!-- Reinforced leather -->
 		<li MayRequire="biomesteam.biomescore">BMT_ChitinStuff</li>
 		<li MayRequire="sarg.rimbees">RB_Waxy</li>
 		<li MayRequire="eltwofour.mantodeanrace">MantodeanOrganic</li>
@@ -484,6 +484,7 @@
 		<li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
 		<li MayRequire="biomesteam.biomescore">BMT_ChitinStuff</li>
 		<li MayRequire="kerbinfiber.chronos">Chitin</li>
+		<li MayRequire="kerbinfiber.chronos">WYD_Chitin</li>
     </stuffCategories>
     <statBases>
       <WorkToMake>14000</WorkToMake>
