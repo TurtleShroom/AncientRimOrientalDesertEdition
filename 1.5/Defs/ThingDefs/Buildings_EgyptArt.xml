@@ -3,7 +3,7 @@
   <!--================================ Obelisk ======================================-->
   <ThingDef ParentName="SculptureBase">
     <defName>AR_ObeliskSmall</defName>
-    <label>small obelisk</label>
+    <label>small Egyptian obelisk</label>
     <description>A monolithic rectangular pillar that symbolizes a sun ray and with it divine law. This is a quite short one and can be placed under a roof.</description>
     <graphicData>
       <graphicClass>Graphic_Multi</graphicClass>
@@ -32,6 +32,8 @@
       <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
       <li MayRequire="sarg.alphabiomes">AB_ExoticWooden</li>
       <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+      <li MayRequire="biomesteam.biomescore">BMT_ChitinStuff</li>
+      <li MayRequire="sarg.rimbees">RB_Waxy</li>
     </stuffCategories>
     <costStuffCount>100</costStuffCount>
     <recipeMaker>
@@ -51,7 +53,7 @@
   </ThingDef>
   <ThingDef ParentName="SculptureBase">
     <defName>AR_ObeliskMedium</defName>
-    <label>medium obelisk</label>
+    <label>medium Egyptian obelisk</label>
     <description>A monolithic rectangular pillar that symbolizes a sun ray and with it divine law. Can't be placed under a roof.</description>
     <graphicData>
       <graphicClass>Graphic_Multi</graphicClass>
@@ -80,6 +82,8 @@
       <li MayRequire="Dubwise.Rimefeller">Composite</li>
       <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
       <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+      <li MayRequire="biomesteam.biomescore">BMT_ChitinStuff</li>
+      <li MayRequire="sarg.rimbees">RB_Waxy</li>
     </stuffCategories>
     <costStuffCount>300</costStuffCount>
     <recipeMaker>
@@ -100,7 +104,7 @@
   </ThingDef>
   <ThingDef ParentName="SculptureBase">
     <defName>AR_ObeliskBig</defName>
-    <label>big obelisk</label>
+    <label>big Egyptian obelisk</label>
     <description>A monolithic rectangular pillar that symbolizes a sun ray and with it divine law. Can't be placed under a roof.</description>
     <graphicData>
       <graphicClass>Graphic_Multi</graphicClass>
@@ -110,7 +114,7 @@
     <dominantStyleCategory MayRequire="Sarg.AlphaMemes">AM_Kemetic</dominantStyleCategory>
     <altitudeLayer>MoteOverhead</altitudeLayer>
     <size>(2,2)</size>
-    <fillPercent>0.5</fillPercent>
+    <fillPercent>1</fillPercent>
     <rotatable>true</rotatable>
     <canOverlapZones>false</canOverlapZones>
     <blockWind>true</blockWind>
