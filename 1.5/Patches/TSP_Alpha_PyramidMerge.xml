@@ -98,8 +98,6 @@
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
   </Operation>
-  
-  
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
     <xpath>/Defs/MemeDef[defName="AM_Structure_Kemetism"]</xpath>
@@ -126,8 +124,6 @@
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
   </Operation>
-  
-  
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
     <xpath>/Defs/MemeDef[defName="AM_Structure_Kemetism"]</xpath>
@@ -150,13 +146,11 @@
       <xpath>/Defs/ThingDef[defName="AM_FuturisticObelisk"]/researchPrerequisites</xpath>
       <value>
         <li>AR_Project_Oriental_Culture</li>
-		<li MayRequire="VanillaExpanded.VFEArt">VFE_Res_Obelisk</li>
+        <li MayRequire="VanillaExpanded.VFEArt">VFE_Res_Obelisk</li>
       </value>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
   </Operation>
-  
-  
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
     <xpath>/Defs/MemeDef[defName="AM_Structure_Kemetism"]</xpath>
@@ -183,9 +177,6 @@
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
   </Operation>
-  
-  
-  
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
     <xpath>/Defs/MemeDef[defName="AM_Structure_Kemetism"]</xpath>
@@ -212,9 +203,6 @@
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
   </Operation>
-  
-  
-  
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
     <xpath>/Defs/MemeDef[defName="AM_Structure_Kemetism"]</xpath>
@@ -241,9 +229,6 @@
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
   </Operation>
-  
-  
-  
   <!-- Reconfigured Alpha Memes Pyramid for this Mod -->
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
@@ -479,9 +464,9 @@
               <drawAssignmentOverlay>true</drawAssignmentOverlay>
               <compClass>CompAssignableToPawn_Grave</compClass>
             </li>
-			<li>
-				<compClass>CompGatherSpot</compClass>
-			</li>
+            <li>
+              <compClass>CompGatherSpot</compClass>
+            </li>
           </comps>
           <placeWorkers>
             <li>PlaceWorker_RitualFocusNoArrow</li>

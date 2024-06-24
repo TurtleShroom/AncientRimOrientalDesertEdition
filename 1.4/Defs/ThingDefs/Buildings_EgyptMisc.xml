@@ -137,9 +137,5 @@
     <researchPrerequisites>
       <li>AR_Project_Oriental_Culture</li>
     </researchPrerequisites>
-	  <tradeTags>
-		<li>Egypt</li>
-		<li>EgyptFurniture</li>
-	  </tradeTags>
   </ThingDef>
 </Defs>

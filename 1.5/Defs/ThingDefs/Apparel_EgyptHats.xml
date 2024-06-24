@@ -11,9 +11,10 @@
     </graphicData>
     <costStuffCount>25</costStuffCount>
     <stuffCategories>
-		<li>Fabric</li>
-		<li>Leathery</li>
-		<li MayRequire="kerbinfiber.chronos">WYD_Padding</li> <!-- Reinforced leather -->
+      <li>Fabric</li>
+      <li>Leathery</li>
+      <li MayRequire="kerbinfiber.chronos">WYD_Padding</li>
+      <!-- Reinforced leather -->
     </stuffCategories>
     <statBases>
       <WorkToMake>850</WorkToMake>
@@ -39,10 +40,10 @@
         <li>ST_GnomeClothing</li>
         <li>islam_head</li>
         <li>Muslim_apparel</li>
-		<li>WoodBeetWear</li>
-		<li>SurvivalistWear</li>
-		<li>HarrierWear</li>
-		<li>CaravaneerWear</li>
+        <li>WoodBeetWear</li>
+        <li>SurvivalistWear</li>
+        <li>HarrierWear</li>
+        <li>CaravaneerWear</li>
       </tags>
       <defaultOutfitTags>
         <li>Worker</li>
@@ -70,11 +71,11 @@
         </li>
       </options>
     </colorGenerator>
-	  <tradeTags>
-		<li>ClothingSimple</li>
-		<li>Egypt</li>
-		<li>EgyptHat</li>
-	  </tradeTags>
+    <tradeTags>
+      <li>ClothingSimple</li>
+      <li>Egypt</li>
+      <li>EgyptHat</li>
+    </tradeTags>
   </ThingDef>
   <ThingDef ParentName="OrientArmourMakeableBase">
     <defName>AR_SkullCap</defName>
@@ -86,10 +87,11 @@
     </graphicData>
     <costStuffCount>15</costStuffCount>
     <stuffCategories>
-		<li>Fabric</li>
-		<li>Leathery</li>
-		<li MayRequire="kerbinfiber.chronos">WYD_Chitin</li>
-		<li MayRequire="kerbinfiber.chronos">WYD_Padding</li> <!-- Reinforced leather -->
+      <li>Fabric</li>
+      <li>Leathery</li>
+      <li MayRequire="kerbinfiber.chronos">WYD_Chitin</li>
+      <li MayRequire="kerbinfiber.chronos">WYD_Padding</li>
+      <!-- Reinforced leather -->
     </stuffCategories>
     <statBases>
       <WorkToMake>1000</WorkToMake>
@@ -129,11 +131,12 @@
         <!-- Should inherit the other production centers from the Base -->
       </recipeUsers>
     </recipeMaker>
-    <colorGenerator Class="ColorGenerator_StandardApparel"></colorGenerator>
-	<tradeTags>
-		<li>Egypt</li>
-		<li>EgyptHatArmor</li>
-	</tradeTags>
+    <colorGenerator Class="ColorGenerator_StandardApparel">
+    </colorGenerator>
+    <tradeTags>
+      <li>Egypt</li>
+      <li>EgyptHatArmor</li>
+    </tradeTags>
   </ThingDef>
   <!-- Military -->
   <ThingDef ParentName="AncientHatMakeableBase">
@@ -146,9 +149,10 @@
     </graphicData>
     <costStuffCount>40</costStuffCount>
     <stuffCategories>
-		<li>Fabric</li>
-		<li>Leathery</li>
-		<li MayRequire="kerbinfiber.chronos">WYD_Padding</li> <!-- Reinforced leather -->
+      <li>Fabric</li>
+      <li>Leathery</li>
+      <li MayRequire="kerbinfiber.chronos">WYD_Padding</li>
+      <!-- Reinforced leather -->
     </stuffCategories>
     <statBases>
       <WorkToMake>5000</WorkToMake>
@@ -188,10 +192,10 @@
       <researchPrerequisite>AR_Project_Light_Armour</researchPrerequisite>
     </recipeMaker>
     <colorGenerator Class="ColorGenerator_StandardApparel" />
-	<tradeTags>
-		<li>Egypt</li>
-		<li>EgyptHatArmor</li>
-	</tradeTags>
+    <tradeTags>
+      <li>Egypt</li>
+      <li>EgyptHatArmor</li>
+    </tradeTags>
   </ThingDef>
   <!-- Royal -->
   <ThingDef ParentName="AncientHatMakeableBase">
@@ -207,12 +211,13 @@
     <!-- SHUT MY MOUTH AND SLAP MY GRANDMA! IT NOW ACCEPTS STUFF! -->
     <costStuffCount>100</costStuffCount>
     <stuffCategories>
-		<li>Fabric</li>
-		<li>Leathery</li>
-		<!-- Mod Support -->
-		<li MayRequire="Dubwise.Rimefeller">Plastic</li>
-		<li MayRequire="Dubwise.Rimefeller">Composite</li>
-		<li MayRequire="kerbinfiber.chronos">WYD_Padding</li> <!-- Reinforced leather -->
+      <li>Fabric</li>
+      <li>Leathery</li>
+      <!-- Mod Support -->
+      <li MayRequire="Dubwise.Rimefeller">Plastic</li>
+      <li MayRequire="Dubwise.Rimefeller">Composite</li>
+      <li MayRequire="kerbinfiber.chronos">WYD_Padding</li>
+      <!-- Reinforced leather -->
     </stuffCategories>
     <costList>
       <Gold>15</Gold>
@@ -261,7 +266,8 @@
       <canBeGeneratedToSatisfyWarmth Inherit="False">false</canBeGeneratedToSatisfyWarmth>
       <countsAsClothingForNudity>false</countsAsClothingForNudity>
     </apparel>
-    <colorGenerator Class="ColorGenerator_StandardApparel"></colorGenerator>
+    <colorGenerator Class="ColorGenerator_StandardApparel">
+    </colorGenerator>
     <recipeMaker>
       <researchPrerequisite>AR_Project_Oriental_Culture</researchPrerequisite>
       <skillRequirements>
@@ -269,12 +275,13 @@
       </skillRequirements>
     </recipeMaker>
     <comps>
-      <li Class="CompProperties_Biocodable"></li>
+      <li Class="CompProperties_Biocodable">
+      </li>
     </comps>
-	<tradeTags>
-		<li>EgyptRoyal</li>
-		<li>Royal</li>
-	</tradeTags>
+    <tradeTags>
+      <li>EgyptRoyal</li>
+      <li>Royal</li>
+    </tradeTags>
   </ThingDef>
   <ThingDef ParentName="AncientHatMakeableBase">
     <defName>AR_Khepresh</defName>
@@ -288,10 +295,11 @@
     <!-- SHUT MY MOUTH AND SLAP MY GRANDMA! IT NOW ACCEPTS STUFF! -->
     <costStuffCount>50</costStuffCount>
     <stuffCategories>
-		<li>Fabric</li>
-		<li>Leathery</li>
-		<li MayRequire="kerbinfiber.chronos">WYD_Chitin</li>
-		<li MayRequire="kerbinfiber.chronos">WYD_Padding</li> <!-- Reinforced leather -->
+      <li>Fabric</li>
+      <li>Leathery</li>
+      <li MayRequire="kerbinfiber.chronos">WYD_Chitin</li>
+      <li MayRequire="kerbinfiber.chronos">WYD_Padding</li>
+      <!-- Reinforced leather -->
     </stuffCategories>
     <costList>
       <Dye>3</Dye>
@@ -347,10 +355,10 @@
         </li>
       </options>
     </colorGenerator>
-	<tradeTags>
-		<li>EgyptRoyal</li>
-		<li>Royal</li>
-	</tradeTags>
+    <tradeTags>
+      <li>EgyptRoyal</li>
+      <li>Royal</li>
+    </tradeTags>
     <comps>
       <li Class="CompProperties_Biocodable" />
     </comps>
@@ -367,10 +375,11 @@
     <!-- SHUT MY MOUTH AND SLAP MY GRANDMA! IT NOW ACCEPTS STUFF! -->
     <costStuffCount>50</costStuffCount>
     <stuffCategories>
-		<li>Fabric</li>
-		<li>Leathery</li>
-		<li MayRequire="kerbinfiber.chronos">WYD_Chitin</li>
-		<li MayRequire="kerbinfiber.chronos">WYD_Padding</li> <!-- Reinforced leather -->
+      <li>Fabric</li>
+      <li>Leathery</li>
+      <li MayRequire="kerbinfiber.chronos">WYD_Chitin</li>
+      <li MayRequire="kerbinfiber.chronos">WYD_Padding</li>
+      <!-- Reinforced leather -->
     </stuffCategories>
     <costList>
       <Gold>15</Gold>
@@ -427,10 +436,10 @@
         </li>
       </options>
     </colorGenerator>
-	<tradeTags>
-		<li>EgyptRoyal</li>
-		<li>Royal</li>
-	</tradeTags>
+    <tradeTags>
+      <li>EgyptRoyal</li>
+      <li>Royal</li>
+    </tradeTags>
     <comps>
       <li Class="CompProperties_Biocodable" />
     </comps>
@@ -446,12 +455,12 @@
     </graphicData>
     <costStuffCount>50</costStuffCount>
     <stuffCategories>
-		<li>Metallic</li>
-		<!-- Mod Support -->
-		<li MayRequire="Dubwise.Rimefeller">Composite</li>
-		<li MayRequire="sarg.alphabiomes">AB_Exotic</li>
-		<li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
-		<li MayRequire="kerbinfiber.chronos">WYD_Chitin</li>
+      <li>Metallic</li>
+      <!-- Mod Support -->
+      <li MayRequire="Dubwise.Rimefeller">Composite</li>
+      <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+      <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+      <li MayRequire="kerbinfiber.chronos">WYD_Chitin</li>
     </stuffCategories>
     <statBases>
       <MaxHitPoints>800</MaxHitPoints>
@@ -489,10 +498,10 @@
         <Crafting>3</Crafting>
       </skillRequirements>
     </recipeMaker>
-	<tradeTags>
-		<li>EgyptRoyal</li>
-		<li>Royal</li>
-	</tradeTags>
+    <tradeTags>
+      <li>EgyptRoyal</li>
+      <li>Royal</li>
+    </tradeTags>
     <comps>
       <li Class="CompProperties_Biocodable" />
     </comps>
@@ -535,8 +544,8 @@
       <tags>
         <li>EgyptianRoyal</li>
         <li>Egypt</li>
-		<li>RoyalTier6</li>
-		<li>RoyalTier7</li>
+        <li>RoyalTier6</li>
+        <li>RoyalTier7</li>
       </tags>
       <defaultOutfitTags>
         <li>Worker</li>
@@ -550,12 +559,13 @@
         <Crafting>6</Crafting>
       </skillRequirements>
     </recipeMaker>
-	<tradeTags>
-		<li>EgyptRoyal</li>
-		<li>Royal</li>
-	</tradeTags>
+    <tradeTags>
+      <li>EgyptRoyal</li>
+      <li>Royal</li>
+    </tradeTags>
     <comps>
-      <li Class="CompProperties_Biocodable"></li>
+      <li Class="CompProperties_Biocodable">
+      </li>
     </comps>
   </ThingDef>
   <!--ThingDef ParentName="OrientArmourMakeableBase">

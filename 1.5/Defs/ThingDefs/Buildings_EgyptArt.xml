@@ -5,7 +5,7 @@
     <defName>AR_ObeliskSmall</defName>
     <label>small Egyptian obelisk</label>
     <description>A monolithic rectangular pillar that symbolizes a sun ray and with it divine law. This is a quite short one and can be placed under a roof.</description>
-	<thingClass>Building_Art</thingClass>
+    <thingClass>Building_Art</thingClass>
     <graphicData>
       <graphicClass>Graphic_Multi</graphicClass>
       <texPath>Buildings/Art/EgyptObelisk/Small</texPath>
@@ -53,14 +53,14 @@
     </placeWorkers>
   </ThingDef>
   <tradeTags>
-	<li>Egypt</li>
-	<li>EgyptFurniture</li>
+    <li>Egypt</li>
+    <li>EgyptFurniture</li>
   </tradeTags>
   <ThingDef ParentName="SculptureBase">
     <defName>AR_ObeliskMedium</defName>
     <label>medium Egyptian obelisk</label>
     <description>A monolithic rectangular pillar that symbolizes a sun ray and with it divine law. Can't be placed under a roof.</description>
-	<thingClass>Building_Art</thingClass>
+    <thingClass>Building_Art</thingClass>
     <graphicData>
       <graphicClass>Graphic_Multi</graphicClass>
       <texPath>Buildings/Art/EgyptObelisk/Medium</texPath>
@@ -107,16 +107,16 @@
       <li>PlaceWorker_RitualFocus</li>
       <li>PlaceWorker_NotUnderRoof</li>
     </placeWorkers>
-	  <tradeTags>
-		<li>Egypt</li>
-		<li>EgyptFurniture</li>
-	  </tradeTags>
+    <tradeTags>
+      <li>Egypt</li>
+      <li>EgyptFurniture</li>
+    </tradeTags>
   </ThingDef>
   <ThingDef ParentName="SculptureBase">
     <defName>AR_ObeliskBig</defName>
     <label>big Egyptian obelisk</label>
     <description>A monolithic rectangular pillar that symbolizes a sun ray and with it divine law. Can't be placed under a roof.</description>
-	<thingClass>Building_Art</thingClass>
+    <thingClass>Building_Art</thingClass>
     <graphicData>
       <graphicClass>Graphic_Multi</graphicClass>
       <texPath>Buildings/Art/EgyptObelisk/Big</texPath>
@@ -161,10 +161,10 @@
       <li>PlaceWorker_RitualFocus</li>
       <li>PlaceWorker_NotUnderRoof</li>
     </placeWorkers>
-	  <tradeTags>
-		<li>Egypt</li>
-		<li>EgyptFurniture</li>
-		<li>EgyptFurnitureHuge</li>
-	  </tradeTags>
+    <tradeTags>
+      <li>Egypt</li>
+      <li>EgyptFurniture</li>
+      <li>EgyptFurnitureHuge</li>
+    </tradeTags>
   </ThingDef>
 </Defs>
