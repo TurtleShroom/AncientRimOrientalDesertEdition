@@ -2,7 +2,7 @@
 <Patch>
   <Operation Class="PatchOperationConditional">
     <!-- DO THE GENTILES KNOW? -->
-    <xpath>/Defs/MemeDef[defName="AM_Structure_Kemetism"]</xpath>
+    <xpath>/Defs/MemeDef[defName="AM_Structure_Kemetism"]/addDesignators</xpath>
     <!-- If they do, SHUT IT DOWN. -->
     <match Class="PatchOperationRemove">
       <success>Always</success>
@@ -12,7 +12,7 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- DO THE GENTILES KNOW? -->
-    <xpath>/Defs/MemeDef[defName="AM_Structure_Kemetism"]</xpath>
+    <xpath>/Defs/MemeDef[defName="AM_Structure_Kemetism"]/addDesignatorGroups</xpath>
     <!-- If they do, SHUT IT DOWN. -->
     <match Class="PatchOperationRemove">
       <success>Always</success>
@@ -98,6 +98,152 @@
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
   </Operation>
+  
+  
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/MemeDef[defName="AM_Structure_Kemetism"]</xpath>
+    <!-- If it does, do this replacement. -->
+    <match Class="PatchOperationReplace">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef[defName="AM_GrandGate"]/canGenerateDefaultDesignator</xpath>
+      <value>
+        <canGenerateDefaultDesignator>true</canGenerateDefaultDesignator>
+      </value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/MemeDef[defName="AM_Structure_Kemetism"]</xpath>
+    <!-- If it does, add this. -->
+    <match Class="PatchOperationAdd">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef[defName="AM_GrandGate"]/researchPrerequisites</xpath>
+      <value>
+        <li>AR_Project_Oriental_Culture</li>
+      </value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  
+  
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/MemeDef[defName="AM_Structure_Kemetism"]</xpath>
+    <!-- If it does, do this replacement. -->
+    <match Class="PatchOperationReplace">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef[defName="AM_FuturisticObelisk"]/canGenerateDefaultDesignator</xpath>
+      <value>
+        <canGenerateDefaultDesignator>true</canGenerateDefaultDesignator>
+      </value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/MemeDef[defName="AM_Structure_Kemetism"]</xpath>
+    <!-- If it does, add this. -->
+    <match Class="PatchOperationAdd">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef[defName="AM_FuturisticObelisk"]/researchPrerequisites</xpath>
+      <value>
+        <li>AR_Project_Oriental_Culture</li>
+		<li MayRequire="VanillaExpanded.VFEArt">VFE_Res_Obelisk</li>
+      </value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  
+  
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/MemeDef[defName="AM_Structure_Kemetism"]</xpath>
+    <!-- If it does, do this replacement. -->
+    <match Class="PatchOperationReplace">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef[defName="AM_FuturisticStele"]/canGenerateDefaultDesignator</xpath>
+      <value>
+        <canGenerateDefaultDesignator>true</canGenerateDefaultDesignator>
+      </value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/MemeDef[defName="AM_Structure_Kemetism"]</xpath>
+    <!-- If it does, add this. -->
+    <match Class="PatchOperationAdd">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef[defName="AM_FuturisticStele"]/researchPrerequisites</xpath>
+      <value>
+        <li>AR_Project_Oriental_Culture</li>
+      </value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  
+  
+  
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/MemeDef[defName="AM_Structure_Kemetism"]</xpath>
+    <!-- If it does, do this replacement. -->
+    <match Class="PatchOperationReplace">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef[defName="AM_FuturisticPyramid"]/canGenerateDefaultDesignator</xpath>
+      <value>
+        <canGenerateDefaultDesignator>true</canGenerateDefaultDesignator>
+      </value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/MemeDef[defName="AM_Structure_Kemetism"]</xpath>
+    <!-- If it does, add this. -->
+    <match Class="PatchOperationAdd">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef[defName="AM_FuturisticPyramid"]/researchPrerequisites</xpath>
+      <value>
+        <li>AR_Project_Oriental_Culture</li>
+      </value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  
+  
+  
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/MemeDef[defName="AM_Structure_Kemetism"]</xpath>
+    <!-- If it does, do this replacement. -->
+    <match Class="PatchOperationReplace">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef[defName="AM_Sphynx"]/canGenerateDefaultDesignator</xpath>
+      <value>
+        <canGenerateDefaultDesignator>true</canGenerateDefaultDesignator>
+      </value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/MemeDef[defName="AM_Structure_Kemetism"]</xpath>
+    <!-- If it does, add this. -->
+    <match Class="PatchOperationAdd">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef[defName="AM_Sphynx"]/researchPrerequisites</xpath>
+      <value>
+        <li>AR_Project_Oriental_Culture</li>
+      </value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  
+  
+  
   <!-- Reconfigured Alpha Memes Pyramid for this Mod -->
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
@@ -105,7 +251,7 @@
     <!-- If it does, do this replacement. -->
     <match Class="PatchOperationReplace">
       <success>Always</success>
-      <xpath>/Defs</xpath>
+      <xpath>/Defs/ThingDef[defName="AM_Pyramid"]</xpath>
       <value>
         <ThingDef ParentName="SteleBase">
           <defName>AM_Pyramid</defName>
@@ -285,10 +431,10 @@
               </focusTypes>
               <offsets>
                 <li Class="FocusStrengthOffset_GraveFull">
-                  <offset>0.2</offset>
+                  <offset>0.5</offset>
                 </li>
                 <li Class="FocusStrengthOffset_GraveCorpseRelationship">
-                  <offset>0.4</offset>
+                  <offset>1</offset>
                 </li>
                 <li Class="FocusStrengthOffset_NearbyGraves">
                   <defs>
@@ -300,9 +446,9 @@
                     <li>Grave</li>
                   </defs>
                   <!-- <offsetPerBuilding>0.015</offsetPerBuilding> -->
-                  <radius>40</radius>
+                  <radius>80</radius>
                   <maxBuildings>40</maxBuildings>
-                  <focusPerFullGrave>0.0105</focusPerFullGrave>
+                  <focusPerFullGrave>0.02</focusPerFullGrave>
                   <explanationKey>MeditationFocusPerGrave</explanationKey>
                   <explanationKeyAbstract>MeditationFocusPerGraveAbstract</explanationKeyAbstract>
                 </li>
@@ -333,6 +479,9 @@
               <drawAssignmentOverlay>true</drawAssignmentOverlay>
               <compClass>CompAssignableToPawn_Grave</compClass>
             </li>
+			<li>
+				<compClass>CompGatherSpot</compClass>
+			</li>
           </comps>
           <placeWorkers>
             <li>PlaceWorker_RitualFocusNoArrow</li>
