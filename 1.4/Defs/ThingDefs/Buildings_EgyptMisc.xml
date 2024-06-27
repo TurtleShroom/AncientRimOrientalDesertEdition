@@ -85,7 +85,7 @@
       <li>
         <compClass>CompQuality</compClass>
       </li>
-      <li Class="CompProperties_Forbiddable" />
+      <li Class="CompProperties_Forbiddable"></li>
       <li Class="CompProperties_Art">
         <nameMaker>NamerArtSarcophagusPlate</nameMaker>
         <descriptionMaker>ArtDescription_SarcophagusPlate</descriptionMaker>
