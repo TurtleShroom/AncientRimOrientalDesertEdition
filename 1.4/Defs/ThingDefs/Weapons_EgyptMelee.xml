@@ -31,8 +31,8 @@
       <li>ITab_Art</li>
     </inspectorTabs>
     <comps>
-      <li MayRequire="jecrell.jecstools">
-        <compClass MayRequire="jecrell.jecstools">CompOversizedWeapon.CompOversizedWeapon</compClass>
+      <li MayRequire="carnysenpai.enableoversizedweapons">
+        <compClass MayRequire="carnysenpai.enableoversizedweapons">CompOversizedWeapon.CompOversizedWeapon</compClass>
       </li>
       <li>
         <compClass>CompQuality</compClass>
