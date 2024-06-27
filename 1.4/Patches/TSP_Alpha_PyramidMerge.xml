@@ -330,6 +330,7 @@
                 <thingDefs>
                   <li MayRequire="sirmashedpotato.escp.dunmer">ESCP_Dunmer_AshlanderMummy</li>
                   <li MayRequire="sirmashedpotato.escp.dunmer">ESCP_Dunmer_BurialUrn</li>
+				  <li>AR_SarcophagusA</li>
                 </thingDefs>
                 <categories>
                   <li>Corpses</li>
@@ -420,7 +421,7 @@
             <li>
               <compClass>CompQuality</compClass>
             </li>
-            <li Class="CompProperties_Forbiddable" />
+            <li Class="CompProperties_Forbiddable"></li>
             <li Class="CompProperties_MeditationFocus">
               <statDef>MeditationFocusStrength</statDef>
               <focusTypes>
@@ -431,7 +432,7 @@
               </focusTypes>
               <offsets>
                 <li Class="FocusStrengthOffset_GraveFull">
-                  <offset>0.5</offset>
+                  <offset>0.35</offset>
                 </li>
                 <li Class="FocusStrengthOffset_GraveCorpseRelationship">
                   <offset>1</offset>
@@ -448,7 +449,7 @@
                   <!-- <offsetPerBuilding>0.015</offsetPerBuilding> -->
                   <radius>80</radius>
                   <maxBuildings>40</maxBuildings>
-                  <focusPerFullGrave>0.02</focusPerFullGrave>
+                  <focusPerFullGrave>0.09</focusPerFullGrave>
                   <explanationKey>MeditationFocusPerGrave</explanationKey>
                   <explanationKeyAbstract>MeditationFocusPerGraveAbstract</explanationKeyAbstract>
                 </li>

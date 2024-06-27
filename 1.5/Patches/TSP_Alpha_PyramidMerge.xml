@@ -98,6 +98,8 @@
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
   </Operation>
+  
+  
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
     <xpath>/Defs/MemeDef[defName="AM_Structure_Kemetism"]</xpath>
@@ -124,6 +126,8 @@
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
   </Operation>
+  
+  
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
     <xpath>/Defs/MemeDef[defName="AM_Structure_Kemetism"]</xpath>
@@ -146,11 +150,13 @@
       <xpath>/Defs/ThingDef[defName="AM_FuturisticObelisk"]/researchPrerequisites</xpath>
       <value>
         <li>AR_Project_Oriental_Culture</li>
-        <li MayRequire="VanillaExpanded.VFEArt">VFE_Res_Obelisk</li>
+		<li MayRequire="VanillaExpanded.VFEArt">VFE_Res_Obelisk</li>
       </value>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
   </Operation>
+  
+  
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
     <xpath>/Defs/MemeDef[defName="AM_Structure_Kemetism"]</xpath>
@@ -177,6 +183,9 @@
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
   </Operation>
+  
+  
+  
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
     <xpath>/Defs/MemeDef[defName="AM_Structure_Kemetism"]</xpath>
@@ -203,6 +212,9 @@
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
   </Operation>
+  
+  
+  
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
     <xpath>/Defs/MemeDef[defName="AM_Structure_Kemetism"]</xpath>
@@ -229,6 +241,9 @@
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
   </Operation>
+  
+  
+  
   <!-- Reconfigured Alpha Memes Pyramid for this Mod -->
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
@@ -315,6 +330,7 @@
                 <thingDefs>
                   <li MayRequire="sirmashedpotato.escp.dunmer">ESCP_Dunmer_AshlanderMummy</li>
                   <li MayRequire="sirmashedpotato.escp.dunmer">ESCP_Dunmer_BurialUrn</li>
+				  <li>AR_SarcophagusA</li>
                 </thingDefs>
                 <categories>
                   <li>Corpses</li>
@@ -405,7 +421,7 @@
             <li>
               <compClass>CompQuality</compClass>
             </li>
-            <li Class="CompProperties_Forbiddable" />
+            <li Class="CompProperties_Forbiddable"></li>
             <li Class="CompProperties_MeditationFocus">
               <statDef>MeditationFocusStrength</statDef>
               <focusTypes>
@@ -416,7 +432,7 @@
               </focusTypes>
               <offsets>
                 <li Class="FocusStrengthOffset_GraveFull">
-                  <offset>0.5</offset>
+                  <offset>0.35</offset>
                 </li>
                 <li Class="FocusStrengthOffset_GraveCorpseRelationship">
                   <offset>1</offset>
@@ -433,7 +449,7 @@
                   <!-- <offsetPerBuilding>0.015</offsetPerBuilding> -->
                   <radius>80</radius>
                   <maxBuildings>40</maxBuildings>
-                  <focusPerFullGrave>0.02</focusPerFullGrave>
+                  <focusPerFullGrave>0.09</focusPerFullGrave>
                   <explanationKey>MeditationFocusPerGrave</explanationKey>
                   <explanationKeyAbstract>MeditationFocusPerGraveAbstract</explanationKeyAbstract>
                 </li>
@@ -464,9 +480,9 @@
               <drawAssignmentOverlay>true</drawAssignmentOverlay>
               <compClass>CompAssignableToPawn_Grave</compClass>
             </li>
-            <li>
-              <compClass>CompGatherSpot</compClass>
-            </li>
+			<li>
+				<compClass>CompGatherSpot</compClass>
+			</li>
           </comps>
           <placeWorkers>
             <li>PlaceWorker_RitualFocusNoArrow</li>
