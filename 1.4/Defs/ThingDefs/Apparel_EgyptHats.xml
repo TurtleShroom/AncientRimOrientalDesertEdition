@@ -16,6 +16,7 @@
 		<li MayRequire="kerbinfiber.chronos">WYD_Padding</li> <!-- Reinforced leather -->
     </stuffCategories>
     <statBases>
+		<MarketVale>12</MarketVale>
       <WorkToMake>850</WorkToMake>
       <Mass>0.1</Mass>
       <StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
@@ -92,6 +93,7 @@
 		<li MayRequire="kerbinfiber.chronos">WYD_Padding</li> <!-- Reinforced leather -->
     </stuffCategories>
     <statBases>
+		<MarketValue>18</MarketValue>
       <WorkToMake>1000</WorkToMake>
       <Mass>0.01</Mass>
       <StuffEffectMultiplierInsulation_Heat>1</StuffEffectMultiplierInsulation_Heat>
@@ -151,6 +153,7 @@
 		<li MayRequire="kerbinfiber.chronos">WYD_Padding</li> <!-- Reinforced leather -->
     </stuffCategories>
     <statBases>
+		<MarketValue>15</MarketValue>
       <WorkToMake>5000</WorkToMake>
       <Mass>1</Mass>
       <StuffEffectMultiplierArmor>0.9</StuffEffectMultiplierArmor>

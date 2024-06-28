@@ -11,6 +11,7 @@
       <tags>
         <li>Egypt</li>
       </tags>
+	  <canBeGeneratedToSatisfyWarmth Inherit="False">false</canBeGeneratedToSatisfyWarmth>
     </apparel>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -35,7 +36,7 @@
       <MaxHitPoints>300</MaxHitPoints>
       <Flammability>1.0</Flammability>
       <DeteriorationRate>2</DeteriorationRate>
-      <Beauty>-1</Beauty>
+      <Beauty>0</Beauty>
       <SellPriceFactor>0.70</SellPriceFactor>
     </statBases>
     <apparel>
@@ -63,6 +64,7 @@
           <li>Plasteel</li>
           <li>Jade</li>
           <li>Uranium</li>
+		  <!-- <li>Steel</li> -->
         </disallowedThingDefs>
       </defaultIngredientFilter>
     </recipeMaker>
@@ -89,10 +91,11 @@
       <li>Apparel</li>
     </thingCategories>
     <statBases>
+		<MarketValue>9</MarketValue>
       <WorkToMake>1000</WorkToMake>
       <StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
       <StuffEffectMultiplierInsulation_Cold>0</StuffEffectMultiplierInsulation_Cold>
-      <StuffEffectMultiplierInsulation_Heat>0.6</StuffEffectMultiplierInsulation_Heat>
+      <StuffEffectMultiplierInsulation_Heat>1</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>1.5</EquipDelay>
       <Mass>0.3</Mass>
     </statBases>
@@ -152,10 +155,11 @@
       <li>Fabric</li>
     </stuffCategories>
     <statBases>
+		<MarketValue>9</MarketValue>
       <WorkToMake>2000</WorkToMake>
       <StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
-      <StuffEffectMultiplierInsulation_Cold>0.06</StuffEffectMultiplierInsulation_Cold>
-      <StuffEffectMultiplierInsulation_Heat>1</StuffEffectMultiplierInsulation_Heat>
+      <StuffEffectMultiplierInsulation_Cold>0.16</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>1.25</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>1.5</EquipDelay>
       <Mass>0.4</Mass>
     </statBases>
@@ -180,11 +184,14 @@
 		<li>OrientalMedium</li>
 		<li>OrientalHeavy</li>
 		<li>Tribal</li>
+		<li>Neolithic</li>
 		<li>EgyptDress</li>
       </tags>
       <gender>Female</gender>
+	  <canBeGeneratedToSatisfyWarmth Inherit="False">true</canBeGeneratedToSatisfyWarmth>
       <defaultOutfitTags>
         <li>Worker</li>
+		<li>Soldier</li>
         <li>Slave</li>
       </defaultOutfitTags>
     </apparel>
@@ -201,7 +208,9 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>AR_Project_Oriental_Culture</researchPrerequisite>
+      <researchPrerequisites>
+		<li>AR_Project_Oriental_Culture</li>
+	  </researchPrerequisites>
       <recipeUsers>
         <!-- This should inherit from the Base -->
         <li>CraftingSpot</li>
@@ -228,6 +237,7 @@
       <li>Leathery</li>
     </stuffCategories>
     <statBases>
+		<MarketValue>22</MarketValue>
       <WorkToMake>3000</WorkToMake>
       <StuffEffectMultiplierArmor>0</StuffEffectMultiplierArmor>
       <StuffEffectMultiplierInsulation_Cold>-0.33</StuffEffectMultiplierInsulation_Cold>
@@ -268,7 +278,9 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>AR_Project_Oriental_Culture</researchPrerequisite>
+      <researchPrerequisites>
+		<li>AR_Project_Oriental_Culture</li>
+	  </researchPrerequisites>
       <recipeUsers>
         <!-- This should inherit from the Base -->
         <li>CraftingSpot</li>
@@ -293,6 +305,7 @@
       <li>Apparel</li>
     </thingCategories>
     <statBases>
+		<MarketValue>23</MarketValue>
       <WorkToMake>4000</WorkToMake>
       <StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
       <StuffEffectMultiplierInsulation_Heat>1</StuffEffectMultiplierInsulation_Heat>
@@ -349,66 +362,6 @@
 	</tradeTags>
   </thingDef>
   <!-- Military -->
-  <!--
-  <thingDef ParentName="OrientArmourMakeableBase">
-    <defName>AR_BandArmour</defName>
-    <description>Just some bands crossed over the torso. Not very protective, but it is better than nothing at all.</description>
-    <label>band armor</label>
-    <graphicData>
-      <texPath>Items/Apparel/BandArmourOnMap</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <costStuffCount>20</costStuffCount>
-	<generateCommonality>0.2</generateCommonality>
-    <stuffCategories>
-      <li>Fabric</li>
-      <li>Leathery</li>
-	  
-	  Mod Support
-      <li MayRequire="Dubwise.Rimefeller">Plastic</li>
-      <li MayRequire="Dubwise.Rimefeller">Composite</li>
-    </stuffCategories>
-    <thingCategories>
-      <li>Apparel</li>
-    </thingCategories>
-    <statBases>
-		<MarketValue>9</MarketValue>
-		<MaxHitPoints>300</MaxHitPoints>
-		<WorkToMake>900</WorkToMake>
-		<Mass>2.5</Mass>
-		<StuffEffectMultiplierArmor>0.4</StuffEffectMultiplierArmor>
-		<StuffEffectMultiplierInsulation_Heat>0.3</StuffEffectMultiplierInsulation_Heat>
-		<EquipDelay>2.5</EquipDelay>
-    </statBases>
-    <apparel>
-      <bodyPartGroups>
-		<li>Torso</li>
-      </bodyPartGroups>
-      <wornGraphicPath>Items/Apparel/BandArmour/Band</wornGraphicPath>
-      <layers>
-        <li>Belt</li>
-      </layers>
-      <tags>
-		<li>OrientalLight</li>
-		<li>Tribal</li>
-		<li>Neolithic</li>
-      </tags>
-      <defaultOutfitTags>
-        <li>Soldier</li>
-      </defaultOutfitTags>
-    </apparel>
-	Does not care about Quality
-	<comps Inherit="False">
-	</comps>
-	<recipeMaker>
-		<recipeUsers Inherit="False">
-			<li>CraftingSpot</li>
-			<li>FueledSmithy</li>
-			<li>ElectricSmithy</li>
-		</recipeUsers>
-	</recipeMaker>
-  </thingDef>
-  -->
   <thingDef ParentName="OrientArmourMakeableBase">
     <defName>AR_PaddedCuirass</defName>
     <description>A chest covering set of laminar padding.</description>
@@ -428,11 +381,13 @@
 		<li MayRequire="eltwofour.mantodeanrace">MantodeanOrganic</li>
     </stuffCategories>
     <statBases>
+		<MarketValue>15</MarketValue>
       <MaxHitPoints>500</MaxHitPoints>
       <WorkToMake>4000</WorkToMake>
       <Mass>5</Mass>
-      <StuffEffectMultiplierArmor>0.85</StuffEffectMultiplierArmor>
-      <StuffEffectMultiplierInsulation_Heat>0.75</StuffEffectMultiplierInsulation_Heat>
+      <StuffEffectMultiplierArmor>0.75</StuffEffectMultiplierArmor>
+	  <StuffEffectMultiplierInsulation_Cold>0.43</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>1</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>5</EquipDelay>
     </statBases>
     <apparel>
@@ -483,14 +438,15 @@
 		<li MayRequire="sarg.alphabiomes">AB_ExoticWooden</li>
 		<li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
 		<li MayRequire="biomesteam.biomescore">BMT_ChitinStuff</li>
-		<li MayRequire="kerbinfiber.chronos">Chitin</li>
 		<li MayRequire="kerbinfiber.chronos">WYD_Chitin</li>
     </stuffCategories>
     <statBases>
+		<MarketValue>35</MarketValue>
       <WorkToMake>14000</WorkToMake>
       <Mass>10</Mass>
       <StuffEffectMultiplierArmor>0.7</StuffEffectMultiplierArmor>
-      <StuffEffectMultiplierInsulation_Heat>0.5</StuffEffectMultiplierInsulation_Heat>
+	  <StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>1</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>5</EquipDelay>
     </statBases>
     <apparel>
@@ -526,7 +482,7 @@
   </thingDef>
   <thingDef ParentName="OrientArmourMakeableBase">
     <defName>AR_ScaleArmour</defName>
-    <description>Heavy armor laid in such a fashion as to resemble layers of scales. Unexpectedly effective to this day, and resistant to almost all melee weapons and even some projectiles.</description>
+    <description>Heavy armor laid in such a fashion as to resemble layers of scales. Unexpectedly effective to this day, and resistant to almost all melee weapons and even some bullets!</description>
     <label>heavy scale armor</label>
     <graphicData>
       <texPath>Items/Apparel/ScaleArmourOnMap</texPath>
@@ -550,6 +506,7 @@
       <Mass>12</Mass>
       <StuffEffectMultiplierArmor>0.75</StuffEffectMultiplierArmor>
       <!-- By comparison, FLAK armor is 0.7 -->
+	  <StuffEffectMultiplierInsulation_Cold>0.02</StuffEffectMultiplierInsulation_Cold>
       <StuffEffectMultiplierInsulation_Heat>1</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>10</EquipDelay>
     </statBases>
@@ -586,13 +543,16 @@
       </skillRequirements>
     </recipeMaker>
     <comps>
-      <li Class="CompProperties_Biocodable" />
+      <li Class="CompProperties_Biocodable"></li>
     </comps>
   </thingDef>
   <thingDef ParentName="OrientArmourMakeableBase">
     <defName>AR_VultureArmour</defName>
-    <description>Heavy armor made of metallic scales and decorated with golden wings. Its protection exceeds that of almost all modern day armor, with the sole exception of Spacer Tech and Ultra Tech protection. The methods of its creation are a closely guarded secret. Gaining the ability to build them will require technology significantly advanced beyond the Egyptians that hold the Vulture Armor's hidden knowledge.</description>
-    <label>vulture armor</label>
+	<label>vulture armor</label>
+    <description>Beautiful, eavy armor made of metallic scales and decorated with golden wings. Its protection exceeds that of almost all modern day armor, with the sole exception of Spacer Tech and Ultra Tech protection. The methods of its creation are a closely guarded secret. Gaining the ability to build them will require technology significantly advanced beyond the Egyptians that hold the Vulture Armor's hidden knowledge.</description>
+	<descriptionHyperlinks>
+		<ResearchProjectDef>MultiAnalyzer</ResearchProjectDef>
+	</descriptionHyperlinks>
     <graphicData>
       <texPath>Items/Apparel/VultureArmourOnMap</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -663,7 +623,7 @@
       </skillRequirements>
     </recipeMaker>
     <comps>
-      <li Class="CompProperties_Biocodable" />
+      <li Class="CompProperties_Biocodable"></li>
     </comps>
   </thingDef>
 </Defs>
