@@ -16,7 +16,7 @@
 		<li MayRequire="kerbinfiber.chronos">WYD_Padding</li> <!-- Reinforced leather -->
     </stuffCategories>
     <statBases>
-		<MarketVale>12</MarketVale>
+		<MarketValue>12</MarketValue>
       <WorkToMake>850</WorkToMake>
       <Mass>0.1</Mass>
       <StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
