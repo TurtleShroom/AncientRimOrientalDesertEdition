@@ -24,13 +24,17 @@
           <li>Gold</li>
           <li>Silver</li>
           <li>WoodLog</li>
+		  <li>Steel</li>
         </disallowedThingDefs>
       </defaultIngredientFilter>
     </recipeMaker>
-    <inspectorTabs>
+    <inspectorTabs Inherit="False">
       <li>ITab_Art</li>
     </inspectorTabs>
-    <comps>
+	<researchPrerequisites>
+		<li>AR_Project_Oriental_Culture</li>
+	</researchPrerequisites>
+	<comps>
       <li MayRequire="carnysenpai.enableoversizedweapons">
         <compClass MayRequire="carnysenpai.enableoversizedweapons">CompOversizedWeapon.CompOversizedWeapon</compClass>
       </li>
@@ -40,7 +44,7 @@
       <li Class="CompProperties_Art">
         <nameMaker>NamerArtWeaponMelee</nameMaker>
         <descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
-        <minQualityForArtistic>Good</minQualityForArtistic>
+        <minQualityForArtistic>Normal</minQualityForArtistic>
       </li>
     </comps>
   </ThingDef>
