@@ -284,7 +284,7 @@
     <label>Khepresh Crown</label>
     <description>Also known as the blue crown or war crown, the Khepresh Crown was mostly worn by the Pharaoh when leading his armies or strategizing battle plans with his advisors.</description>
     <graphicData>
-      <texPath>Items/Apparel/NemesOnMap</texPath>
+      <texPath>Items/Apparel/KhepreshOnMap</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <tradeability>Sellable</tradeability>
