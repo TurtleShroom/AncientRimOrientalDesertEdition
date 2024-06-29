@@ -6,7 +6,7 @@
 		<defName>AR_BandArmour</defName>
 		<label>band armor (ERROR)</label>
 		<category>Filth</category>
-		<description>If this is ever encountered in the game as an item, inform Mlie's Github repository's Issues, because it is not meant to be seen.</description>
+		<description>If this is ever encountered in the game as an item, inform Mlie's Github repository's Issues for the Ancient Rim Egypt Mod, because it is not meant to be seen.</description>
 		<graphicData Inherit="False">
 			<texPath>Items/Apparel/BandArmourOnMap</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
