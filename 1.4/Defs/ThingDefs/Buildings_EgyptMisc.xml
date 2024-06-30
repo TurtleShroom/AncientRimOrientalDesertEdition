@@ -134,7 +134,7 @@
     <blockWind>false</blockWind>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <staticSunShadowHeight>0.3</staticSunShadowHeight>
-    <designationCategory>Misc</designationCategory>
+    <designationCategory>Jerry</designationCategory>
     <researchPrerequisites>
       <li>AR_Project_Oriental_Culture</li>
     </researchPrerequisites>

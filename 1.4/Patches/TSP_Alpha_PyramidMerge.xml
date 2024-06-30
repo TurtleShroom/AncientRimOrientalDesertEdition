@@ -143,7 +143,7 @@
   
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/MemeDef[defName="AM_Structure_Kemetism"]</xpath>
+    <xpath>/Defs/MemeDef[defName="AM_FuturisticObelisk"]/canGenerateDefaultDesignator</xpath>
     <!-- If it does, do this replacement. -->
     <match Class="PatchOperationReplace">
       <success>Always</success>
@@ -152,6 +152,14 @@
         <canGenerateDefaultDesignator>true</canGenerateDefaultDesignator>
       </value>
     </match>
+	<!-- If it DOES NOT, add this. -->
+    <nomatch Class="PatchOperationAdd">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef[defName="AM_FuturisticObelisk"]</xpath>
+      <value>
+        <canGenerateDefaultDesignator>true</canGenerateDefaultDesignator>
+      </value>
+    </nomatch>
     <!-- If the first XPATH does not exist, the original code stands. -->
   </Operation>
   <Operation Class="PatchOperationConditional">
@@ -300,7 +308,7 @@
           <description>A gigantic structure whose outer surfaces are triangular and converge to a single step at the top. A Pawn can be granted the incredible honor of being stored here and be dignified for all of time.</description>
           <category>Building</category>
           <thingClass Inherit="False">Building_Grave</thingClass>
-          <designationCategory>Misc</designationCategory>
+          <designationCategory>Jerry</designationCategory>
           <forceDebugSpawnable>true</forceDebugSpawnable>
           <graphicData>
             <graphicClass>Graphic_Single</graphicClass>
@@ -595,7 +603,7 @@
 						<li>Stony</li>
 					</stuffCategories>
 					<minifiedDef>MinifiedThing</minifiedDef>
-					<designationCategory>Misc</designationCategory>
+					<designationCategory>Jerry</designationCategory>
 					<thingCategories>
 						<li>BuildingsMisc</li>
 					</thingCategories>
