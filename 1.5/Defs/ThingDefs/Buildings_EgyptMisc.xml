@@ -90,8 +90,6 @@
         <nameMaker>NamerArtSarcophagusPlate</nameMaker>
         <descriptionMaker>ArtDescription_SarcophagusPlate</descriptionMaker>
         <mustBeFullGrave>true</mustBeFullGrave>
-        <!-- <canBeEnjoyedAsArt>true</canBeEnjoyedAsArt> -->
-		<!-- <minQualityForArtistic>Awful</minQualityForArtistic> -->
       </li>
       <li Class="CompProperties_AssignableToPawn">
         <drawAssignmentOverlay>false</drawAssignmentOverlay>
@@ -136,7 +134,7 @@
     <blockWind>false</blockWind>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <staticSunShadowHeight>0.3</staticSunShadowHeight>
-    <designationCategory>Misc</designationCategory>
+    <designationCategory>Jerry</designationCategory>
     <researchPrerequisites>
       <li>AR_Project_Oriental_Culture</li>
     </researchPrerequisites>
