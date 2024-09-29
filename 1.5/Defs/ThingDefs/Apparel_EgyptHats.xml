@@ -355,7 +355,7 @@
 		<li>Royal</li>
 	</tradeTags>
     <comps>
-      <li Class="CompProperties_Biocodable" />
+      <li Class="CompProperties_Biocodable"></li>
     </comps>
   </ThingDef>
   <ThingDef ParentName="AncientHatMakeableBase">

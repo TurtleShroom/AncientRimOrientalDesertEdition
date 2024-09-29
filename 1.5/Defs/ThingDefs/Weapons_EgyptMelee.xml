@@ -35,9 +35,6 @@
 		<li>AR_Project_Oriental_Culture</li>
 	</researchPrerequisites>
 	<comps>
-      <li MayRequire="carnysenpai.enableoversizedweapons">
-        <compClass MayRequire="carnysenpai.enableoversizedweapons">CompOversizedWeapon.CompOversizedWeapon</compClass>
-      </li>
       <li>
         <compClass>CompQuality</compClass>
       </li>
